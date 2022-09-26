@@ -1,0 +1,45 @@
+<resources>
+	<string name="app_name">Calculator</string>
+
+	<string name="calc_clr">C</string>
+	<string name="calc_mc">MC</string>
+	<string name="calc_ms">MS</string>
+	<string name="calc_mr">MR</string>
+	<string name="calc_mp">M+</string>
+	<string name="calc_mm">M-</string>
+	<string name="calc_bck">⬅</string>
+
+	<string name="calc_per">%</string>
+	<string name="calc_sqt">√</string>
+	<string name="calc_inv">1/x</string>
+	<string name="calc_sgn">+/-</string>
+
+	<string name="calc_add">+</string>
+	<string name="calc_sub">-</string>
+	<string name="calc_mul">×</string>
+	<string name="calc_div">÷</string>
+	<string name="calc_pow">^</string>
+
+	<string name="calc_dec">.</string>
+	<string name="calc_eql">=</string>
+
+	<string name="calc_0">0</string>
+	<string name="calc_1">1</string>
+	<string name="calc_2">2</string>
+	<string name="calc_3">3</string>
+	<string name="calc_4">4</string>
+	<string name="calc_5">5</string>
+	<string name="calc_6">6</string>
+	<string name="calc_7">7</string>
+	<string name="calc_8">8</string>
+	<string name="calc_9">9</string>
+
+	<string name="error">Error</string>
+	<string name="error1">Exp Error</string>
+	<string name="error1msg">Malformed expression!</string>
+	<string name="error2">Div Error</string>
+	<string name="error2msg">Can not divide by zero!</string>
+	<string name="error3">Num Error</string>
+	<string name="error3msg">Number is too big!</string>
+
+</resources>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<GridLayout
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:columnCount="7"
+		android:rowCount="5"
+		android:layout_margin="4dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<EditText
+			android:id="@+id/editText"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_row="0"
+			android:layout_rowSpan="1"
+			android:layout_rowWeight="1"
+			android:layout_column="0"
+			android:layout_columnSpan="7"
+			android:layout_columnWeight="7"
+			android:layout_marginStart="4dp"
+			android:layout_marginTop="4dp"
+			android:layout_marginEnd="4dp"
+			android:layout_marginBottom="4dp"
+			android:background="@color/gray_light"
+			android:clickable="false"
+			android:cursorVisible="false"
+			android:focusable="false"
+			android:inputType="textNoSuggestions"
+			android:padding="4sp"
+			android:scrollHorizontally="true"
+			android:singleLine="true"
+			android:textAlignment="viewEnd"
+			android:textColor="@color/gray_dark"
+			android:textSize="48sp" />
+
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/blue_washed"
+			android:onClick="calc_clr"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_clr"
+			android:textColor="@color/gray_light"
+			android:textSize="24sp"
+			app:backgroundTint="@color/blue_washed" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_dark"
+			android:onClick="calc_mc"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_mc"
+			android:textColor="@color/gray_light"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_dark" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_dark"
+			android:onClick="calc_mr"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_mr"
+			android:textColor="@color/gray_light"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_dark" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_dark"
+			android:onClick="calc_ms"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_ms"
+			android:textColor="@color/gray_light"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_dark" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_dark"
+			android:onClick="calc_mp"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_mp"
+			android:textColor="@color/gray_light"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_dark" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_dark"
+			android:onClick="calc_mm"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_mm"
+			android:textColor="@color/gray_light"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_dark" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_dark"
+			android:onClick="calc_bck"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_bck"
+			android:textColor="@color/gray_light"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_dark" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_dark"
+			android:onClick="calc_pow"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_pow"
+			android:textColor="@color/gray_light"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_dark" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_dark"
+			android:onClick="calc_inv"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_inv"
+			android:textColor="@color/gray_light"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_dark" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_light"
+			android:onClick="calc_plain"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_7"
+			android:textColor="@color/gray_dark"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_light" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_light"
+			android:onClick="calc_plain"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_8"
+			android:textColor="@color/gray_dark"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_light" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_light"
+			android:onClick="calc_plain"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_9"
+			android:textColor="@color/gray_dark"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_light" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_dark"
+			android:onClick="calc_mul"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_mul"
+			android:textColor="@color/gray_light"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_dark" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_dark"
+			android:onClick="calc_div"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_div"
+			android:textColor="@color/gray_light"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_dark" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_dark"
+			android:onClick="calc_per"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_per"
+			android:textColor="@color/gray_light"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_dark" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_dark"
+			android:onClick="calc_sgn"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_sgn"
+			android:textColor="@color/gray_light"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_dark" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_light"
+			android:onClick="calc_plain"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_4"
+			android:textColor="@color/gray_dark"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_light" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_light"
+			android:onClick="calc_plain"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_5"
+			android:textColor="@color/gray_dark"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_light" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_light"
+			android:onClick="calc_plain"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_6"
+			android:textColor="@color/gray_dark"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_light" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_dark"
+			android:onClick="calc_add"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_add"
+			android:textColor="@color/gray_light"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_dark" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_dark"
+			android:onClick="calc_sub"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_sub"
+			android:textColor="@color/gray_light"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_dark" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_dark"
+			android:onClick="calc_sqt"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_sqt"
+			android:textColor="@color/gray_light"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_dark" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnSpan="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_light"
+			android:onClick="calc_plain"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_0"
+			android:textColor="@color/gray_dark"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_light" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_light"
+			android:onClick="calc_plain"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_1"
+			android:textColor="@color/gray_dark"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_light" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_light"
+			android:onClick="calc_plain"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_2"
+			android:textColor="@color/gray_dark"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_light" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_light"
+			android:onClick="calc_plain"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_3"
+			android:textColor="@color/gray_dark"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_light" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/gray_dark"
+			android:onClick="calc_dec"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_dec"
+			android:textColor="@color/gray_light"
+			android:textSize="24sp"
+			app:backgroundTint="@color/gray_dark" />
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_rowSpan="1"
+			android:layout_rowWeight="1"
+			android:layout_columnWeight="1"
+			android:layout_margin="4dp"
+			android:background="@color/blue_washed"
+			android:onClick="calc_eql"
+			android:paddingHorizontal="0dp"
+			android:paddingVertical="0dp"
+			android:text="@string/calc_eql"
+			android:textColor="@color/gray_light"
+			android:textSize="24sp"
+			app:backgroundTint="@color/blue_washed" />
+
+	</GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
